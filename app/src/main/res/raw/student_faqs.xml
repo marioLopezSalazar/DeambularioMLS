@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faqs xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="es">
+    <faq>
+        <question>¿Cómo sé a dónde tengo que ir?</question>
+        <answer>Con la ayuda del mapa, sabrás a dónde tienes que ir. Según haya configurado tu profe la ruta, puede que solo aparezca un próximo lugar, o que aparezcan muchos lugares disponibles (en este caso deberás decidir cómo recorrerlos para caminar lo mínimo posible...).</answer>
+    </faq>
+    <faq>
+        <question>¿Cómo veo los contenidos y las actividades que ha puesto mi profe?</question>
+        <answer>Cuando estés cerca del hito, se activará un botón para acceder a ellas.</answer>
+    </faq>
+    <faq>
+        <question>¿Cómo sé la tarea que me queda por hacer?</question>
+        <answer>En la barra superior encontrarás un botón para ver tu progreso. Si tienes algún hito sin terminar, búscalo en el mapa y podrás volver a ver sus contenidos y actividades.</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo comunicarme con mi profe?</question>
+        <answer>Puedes enviarle una alerta, sin detallar texto (lo sentimos, esto no es un chat).</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo comunicarme con otros/as compañeros/as del grupo?</question>
+        <answer>No (recordamos, esto no es un chat).</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo apagar la pantalla para no gastar batería?</question>
+        <answer>¡Sin problema! Siempre y cuando sepas hacia dónde te diriges...</answer>
+    </faq>
+    <faq>
+        <question>¿Qué pasa si utilizo la opción de 'Cerrar sesión'?</question>
+        <answer>Abandonarás la sesión y no podrás volver a entrar a ella (salvo con un nick nuevo, empezando desde el principio).</answer>
+    </faq>
+    <faq>
+        <question>¿Qué pasa si me quedo sin cobertura?</question>
+        <answer>Podrás acceder a los contenidos y actividades, y tus respuestas se subirán una vez recobres la cobertura. Pero... ¡CUIDADO! Las fotos y los vídeos tendrás que guardarlas en tu galería para subirlas después.</answer>
+    </faq>
+    <faq>
+        <question>¿Puede mi profe saber dónde estoy, en todo momento?</question>
+        <answer>Sí, siempre que tengas cobertura, y aunque apagues la pantalla.</answer>
+    </faq>
+</faqs>

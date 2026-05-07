@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_route"
+    style="@style/Card_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- ROUTE TITLE-->
+        <TextView
+            android:id="@+id/text_route_title"
+            style="@style/Subtitle_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/text_route_level"
+            app:layout_constraintEnd_toStartOf="@id/button_play_route"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sculptures in the park"/>
+
+        <!-- ROUTE EDUCATIVE LEVEL-->
+        <TextView
+            android:id="@+id/text_route_level"
+            style="@style/Text_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOutlineVariant"
+            app:layout_constraintEnd_toStartOf="@id/button_play_route"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_route_title"
+            tools:text="Secondary"/>
+
+        <!-- NEW SESSION BUTTON-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_play_route"
+            style="@style/CardButtonMain_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/new_session"
+            app:icon="@drawable/icon_new_session"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/button_route_detail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- ROUTE DETAILS BUTTON-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_route_detail"
+            style="@style/CardButton_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/see_details"
+            app:icon="@drawable/icon_see_details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

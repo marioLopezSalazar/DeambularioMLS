@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_teacher"
+    app:startDestination="@id/route_list_fragment">
+
+    <fragment
+        android:id="@+id/route_list_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.RoutesListFragment"
+        android:label="@string/routes"
+        tools:layout="@layout/fragment_routes_list" >
+
+        <action
+            android:id="@+id/action_route_list_to_route_view"
+            app:destination="@id/route_view_fragment" />
+
+        <action
+            android:id="@+id/action_route_list_to_route_form"
+            app:destination="@id/route_form_fragment" />
+
+        <action
+            android:id="@+id/action_route_list_to_session_list"
+            app:destination="@id/session_list_fragment" />
+
+        <action
+            android:id="@+id/action_route_list_to_profile"
+            app:destination="@id/teacher_settings_fragment" />
+
+        <action
+            android:id="@+id/action_route_list_to_session_lobby"
+            app:destination="@id/session_lobby_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/route_view_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.RouteViewFragment"
+        android:label="@string/empty"
+        tools:layout="@layout/fragment_route_view" >
+
+        <action
+            android:id="@+id/action_route_view_to_route_form"
+            app:destination="@id/route_form_fragment" />
+        <action
+            android:id="@+id/action_route_view_fragment_to_milestone_fragment"
+            app:destination="@id/milestone_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/route_form_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.RouteFormFragment"
+        android:label="@string/route_edit"
+        tools:layout="@layout/fragment_route_form" >
+        <action
+            android:id="@+id/action_route_form_fragment_to_milestone_fragment"
+            app:destination="@id/milestone_fragment" />
+        <action
+            android:id="@+id/action_route_form_fragment_to_route_geofence_fragment"
+            app:destination="@id/route_geofence_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/route_geofence_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.GeofenceFragment"
+        android:label="@string/set_up_geofence"
+        tools:layout="@layout/fragment_route_geofence" >
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/milestone_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.MilestoneFragment"
+        android:label="@string/milestone_detail"
+        tools:layout="@layout/fragment_milestone" >
+        <action
+            android:id="@+id/action_milestone_fragment_to_location_select_fragment"
+            app:destination="@id/location_select_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/location_select_fragment"
+        android:name="com.iesaguadulce.deambulario.dashboard.LocationSelectFragment"
+        android:label="@string/set_position"
+        tools:layout="@layout/fragment_milestone_location_select" />
+
+
+
+    <fragment
+        android:id="@+id/session_list_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.SessionsListFragment"
+        android:label="@string/sessions"
+        tools:layout="@layout/fragment_sessions_list" >
+
+        <action
+            android:id="@+id/action_session_list_fragment_to_session_lobby_fragment"
+            app:destination="@id/session_lobby_fragment" />
+
+        <action
+            android:id="@+id/action_session_list_fragment_to_session_track_fragment"
+            app:destination="@id/session_track_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/session_lobby_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.SessionLobbyFragment"
+        android:label="@string/lobby"
+        tools:layout="@layout/fragment_session_lobby" >
+
+        <action
+            android:id="@+id/action_session_lobby_fragment_to_session_track_fragment"
+            app:destination="@id/session_track_fragment"
+            app:popUpTo="@id/session_lobby_fragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_session_lobby_fragment_to_route_view_fragment"
+            app:destination="@id/route_view_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/session_track_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.SessionTrackFragment"
+        android:label=""
+        tools:layout="@layout/fragment_session_track" >
+        <action
+            android:id="@+id/action_session_track_to_route_view"
+            app:destination="@id/route_view_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/teacher_settings_fragment"
+        android:name="com.iesaguadulce.deambulario.settings.TeacherSettingsFragment"
+        android:label="@string/profile" >
+        <action
+            android:id="@+id/action_teacher_settings_to_teacher_faq"
+            app:destination="@id/teacher_faq_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teacher_faq_fragment"
+        android:name="com.iesaguadulce.deambulario.settings.TeacherFAQFragment"
+        android:label="@string/faq" />
+
+</navigation>

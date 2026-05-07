@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248951546538",
+    "project_id": "deambulario-mariolopezsa-57907",
+    "storage_bucket": "deambulario-mariolopezsa-57907.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248951546538:android:e29a3b11082701fde4e6d3",
+        "android_client_info": {
+          "package_name": "com.iesaguadulce.deambulario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248951546538-fq4r7kvkgokoag9poel85mces1u5fqi5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iesaguadulce.deambulario",
+            "certificate_hash": "86977c6d7280bc87a471a0ab3e45eb4bc128e7be"
+          }
+        },
+        {
+          "client_id": "248951546538-n9dd0r4fb5ecqk64pat9dh564dp6c3jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF3LCQDYCmoA942Kk5AVkNnq6m8BVAWzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248951546538-n9dd0r4fb5ecqk64pat9dh564dp6c3jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

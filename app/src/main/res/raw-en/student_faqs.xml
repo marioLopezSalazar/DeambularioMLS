@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faqs>
+    <faq>
+        <question>How do I know where to go?</question>
+        <answer>With the help of the map, you will know where to go. Depending on how your teacher has configured the route, only one upcoming location might appear, or many available locations might appear (in this case, you will have to decide how to visit them walking as little as possible...).</answer>
+    </faq>
+    <faq>
+        <question>How do I see the content and activities my teacher has added?</question>
+        <answer>When you are close to the milestone, a button will be enabled to access them.</answer>
+    </faq>
+    <faq>
+        <question>How do I know the tasks I have left to do?</question>
+        <answer>In the top bar, you will find a button to check your progress. If you have any unfinished milestones, look for them on the map, and you will be able to see their content and activities again.</answer>
+    </faq>
+    <faq>
+        <question>Can I communicate with my teacher?</question>
+        <answer>You can send them an alert without detailing text (sorry, this is not a chat).</answer>
+    </faq>
+    <faq>
+        <question>Can I communicate with other classmates in the group?</question>
+        <answer>No (remember, this is not a chat).</answer>
+    </faq>
+    <faq>
+        <question>Can I turn off the screen to save battery?</question>
+        <answer>No problem! As long as you know where you are heading...</answer>
+    </faq>
+    <faq>
+        <question>What happens if I use the 'Leave session' option?</question>
+        <answer>You will leave the session and will not be able to re-enter it (except with a new nickname, starting from the beginning).</answer>
+    </faq>
+    <faq>
+        <question>What happens if I lose internet connection?</question>
+        <answer>You will be able to access the content and activities, and your answers will be uploaded once you regain connection. But... CAREFUL! You will have to save photos and videos in your gallery to upload them later.</answer>
+    </faq>
+    <faq>
+        <question>Can my teacher know where I am at all times?</question>
+        <answer>Yes, as long as you have internet connection, and even if you turn off the screen.</answer>
+    </faq>
+</faqs>

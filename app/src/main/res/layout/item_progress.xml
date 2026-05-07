@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="12dp">
+
+    <!-- MILESTONE ACTIVITIES STATUS ICON -->
+    <ImageView
+        android:id="@+id/image_status_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/status"
+        tools:src="@drawable/icon_incomplete_activities"
+        tools:tint="@color/incompleted" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- MILESTONE TITLE -->
+        <TextView
+            android:id="@+id/textview_milestone_name"
+            style="@style/Subtitle_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="Willow Grandad: The most ancient tree" />
+
+        <!-- MILESTONE ACTIVITIES DESCRIPTION -->
+        <TextView
+            android:id="@+id/textview_milestone_subtitle"
+            style="@style/Text_teacher"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOutlineVariant"
+            android:visibility="gone"
+            tools:text="Uncompleted activities"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

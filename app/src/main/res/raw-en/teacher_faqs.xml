@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faqs>
+    <faq>
+        <question>How many milestones can a route have?</question>
+        <answer>As many as you wish. However, to start a session on it, it must have at least one milestone.</answer>
+    </faq>
+    <faq>
+        <question>Do all milestones have to have content and activities?</question>
+        <answer>No, content and activities are optional. Milestones can be created just by indicating their title and position.</answer>
+    </faq>
+    <faq>
+        <question>Do all routes need to have geofencing?</question>
+        <answer>Geofencing can be set or not. Once set, you must configure whether it will be enabled or disabled before starting the session.</answer>
+    </faq>
+    <faq>
+        <question>Can I edit or delete a route?</question>
+        <answer>Routes can be edited or deleted from the 'Route details' window. Routes with an active session cannot be edited or deleted.</answer>
+    </faq>
+    <faq>
+        <question>If I edit or delete a route, what happens to its finished sessions?</question>
+        <answer>No problem! The sessions are kept saved, along with the original activity statements and the students' answers.</answer>
+    </faq>
+    <faq>
+        <question>Can I have multiple sessions of the same route open simultaneously?</question>
+        <answer>Yes. You can have as many active sessions as you need, whether they are from the same route or different ones.</answer>
+    </faq>
+    <faq>
+        <question>How and when can my students connect to the session?</question>
+        <answer>Students can join the session once you start the route. They must enter the access PIN code you provide them. They can join at any time, even if the session has been active for hours.</answer>
+    </faq>
+    <faq>
+        <question>A student has entered the session with an inappropriate nickname, what should I do?</question>
+        <answer>You can kick them out from the 'Session details' window, in the 'Lobby' tab. The student will receive a warning on their screen, and can re-enter the session by choosing a different nickname.</answer>
+    </faq>
+    <faq>
+        <question>Can I erase a session?</question>
+        <answer>Yes, when a long pushing on the session. Don't forget to download the answers previously.</answer>
+    </faq>
+    <faq>
+        <question>Does Deambulario record which nickname corresponds to which real-life student?</question>
+        <answer>Intentionally, no. Deambulario prioritizes student privacy in the cloud. It is your responsibility to evaluate the students in situ based on the aliases they use. We recommend advising on good digital protection practices.</answer>
+    </faq>
+    <faq>
+        <question>What happens if my students lose internet connection?</question>
+        <answer>You will stop receiving their real-time location, although you will see where they lost coverage. They will have access to the milestones, with their content and activities. The answers will be automatically uploaded once coverage is restored, except for photos/videos (they will be instructed to save them in their gallery and upload them later).</answer>
+    </faq>
+    <faq>
+        <question>If my students close the app, will they receive my messages?</question>
+        <answer>Even with the app minimized or the phone screen off, they will receive message notifications, as long as they don't explicitly choose the 'Leave route' option.</answer>
+    </faq>
+    <faq>
+        <question>If I do not accept Deambulario knowing my location, can I use the app?</question>
+        <answer>Yes, the teacher's location is only used to facilitate the design of new routes and to be displayed on the session map.</answer>
+    </faq>
+    <faq>
+        <question>If my students do not accept Deambulario knowing their location or sending notifications, can they enter the session?</question>
+        <answer>They will not be able to. We consider it essential to access these features to make them available to teachers and ensure the route is safe.</answer>
+    </faq>
+</faqs>

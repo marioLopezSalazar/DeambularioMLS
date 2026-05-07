@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Deambulario" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/deambulario_orange_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorPrimaryContainer">@color/deambulario_orange_light</item>
+        <item name="colorOnPrimaryContainer">@color/deambulario_orange_dark</item>
+
+        <item name="colorSecondary">@color/deambulario_orange</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorSurface">@color/deambulario_orange_ultra_light</item>
+        <item name="colorOnSurfaceVariant">@color/deambulario_orange</item>
+        <item name="colorOutlineVariant">@color/deambulario_orange_ultra_dark</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+
+    <style name="Theme.Deambulario.Teacher" parent="Theme.Deambulario" />
+
+
+    //==============================================================================================
+
+
+    <style name="Theme.Deambulario.Student" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="fontFamily">@font/student_font</item>
+    </style>
+
+
+    <style name="Theme.Deambulario.Student.Forest" parent="Theme.Deambulario.Student">
+        <item name="colorPrimary">@color/forest_primary</item>
+        <item name="colorSecondary">@color/forest_secondary</item>
+        <item name="colorSurface">@color/forest_background</item>
+        <item name="colorOutlineVariant">@color/forest_dark</item>
+    </style>
+
+    <style name="Theme.Deambulario.Student.Coast" parent="Theme.Deambulario.Student">
+        <item name="colorPrimary">@color/coast_primary</item>
+        <item name="colorSecondary">@color/coast_secondary</item>
+        <item name="colorSurface">@color/coast_background</item>
+        <item name="colorOutlineVariant">@color/coast_dark</item>
+    </style>
+
+    <style name="Theme.Deambulario.Student.City" parent="Theme.Deambulario.Student">
+        <item name="colorPrimary">@color/city_primary</item>
+        <item name="colorSecondary">@color/city_secondary</item>
+        <item name="colorSurface">@color/city_background</item>
+        <item name="colorOutlineVariant">@color/city_dark</item>
+    </style>
+
+</resources>

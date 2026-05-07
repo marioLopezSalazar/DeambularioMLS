@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.Deambulario.Student.Forest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- SESSION PIN LABEL -->
+            <TextView
+                android:id="@+id/textViewPin"
+                style="@style/Title_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student_login_title"
+                app:layout_constraintBottom_toTopOf="@id/pinInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed"/>
+
+            <!-- SESSION PIN TEXT FIELD -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pinInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/session_pin_hint"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@id/textViewNick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewPin"
+                app:layout_constraintWidth_max="320dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pinTextField"
+                    android:textAppearance="@style/Title_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- STUDENT NICK LABEL -->
+            <TextView
+                android:id="@+id/textViewNick"
+                style="@style/Subtitle_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_nick"
+                android:layout_marginTop="80dp"
+                app:layout_constraintBottom_toTopOf="@id/nickInputLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pinInputLayout" />
+
+            <!-- STUDENT NICK TEXT FIELD -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nickInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/nick_hint"
+                app:endIconMode="clear_text"
+                app:layout_constraintBottom_toTopOf="@id/btnEnterSession"
+                app:layout_constraintEnd_toEndOf="@id/pinInputLayout"
+                app:layout_constraintStart_toStartOf="@id/pinInputLayout"
+                app:layout_constraintTop_toBottomOf="@id/textViewNick">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nickTextField"
+                    android:textAppearance="@style/Text_student"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/student_font"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:gravity="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- JOIN SESSION BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEnterSession"
+                style="@style/Button_student"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/enter_session"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/pinInputLayout"
+                app:layout_constraintStart_toStartOf="@id/pinInputLayout"
+                app:layout_constraintTop_toBottomOf="@id/nickInputLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/layout_loading_overlay"
+        style="@style/GlobalLoadingOverlay_teacher"
+        android:visibility="gone">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </FrameLayout>
+</FrameLayout>

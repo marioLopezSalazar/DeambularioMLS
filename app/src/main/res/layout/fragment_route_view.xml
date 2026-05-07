@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ROUTE TITLE -->
+    <TextView
+        android:id="@+id/textview_title"
+        style="@style/Title_teacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sculptures in the park" />
+
+    <!-- ROUTE EDUCATIVE LEVEL -->
+    <TextView
+        android:id="@+id/textview_level"
+        style="@style/Subtitle_teacher"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_show_curricula"
+        app:layout_constraintEnd_toStartOf="@id/button_show_curricula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_show_curricula"
+        tools:text="3º ESO" />
+
+    <!-- BUTTON TO OPEN CURRICULA BOTTOM_SHEET -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_show_curricula"
+        style="@style/Button_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/curricula"
+        app:icon="@drawable/icon_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+    <!-- ROUTE MAP -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/route_map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/button_show_curricula"
+        tools:layout="@layout/map_example" />
+
+    <!-- ROUTE SETTING -->
+    <LinearLayout
+        android:id="@+id/layout_settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        app:layout_constraintTop_toBottomOf="@id/route_map_view">
+
+        <!-- ROUTE IN ORDER -->
+        <TextView
+            android:id="@+id/textview_in_order"
+            style="@style/Text_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            tools:text="🔢 Route in order" />
+
+        <!-- GEOFENCE STATUS -->
+        <TextView
+            android:id="@+id/textview_geofence"
+            style="@style/Text_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="16dp"
+            tools:text="📍 Geofence enabled" />
+
+    </LinearLayout>
+
+    <!-- MILESTONES RECYCLERVIEW -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_milestones"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_settings_container"
+        tools:itemCount="5"
+        tools:listitem="@layout/item_milestone" />
+
+    <!-- NO MILESTONES INDICATOR -->
+    <TextView
+        android:id="@+id/layout_empty_state_milestones"
+        style="@style/EmptyList_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_milestones"
+        app:drawableStartCompat="@drawable/icon_milestone_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_settings_container"
+        tools:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

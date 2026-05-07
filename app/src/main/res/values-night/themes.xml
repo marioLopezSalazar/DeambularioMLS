@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.Deambulario" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/deambulario_orange</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <item name="colorPrimaryContainer">@color/deambulario_orange_dark</item>
+        <item name="colorOnPrimaryContainer">@color/deambulario_orange_light</item>
+
+        <item name="colorSecondary">@color/deambulario_orange_light</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

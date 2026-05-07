@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_nav_graph"
+    app:startDestination="@id/student_lobby_fragment">
+
+    <fragment
+        android:id="@+id/student_lobby_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.StudentLobbyFragment"
+        android:label="@string/waiting"
+        tools:layout="@layout/fragment_student_lobby" >
+
+        <action
+            android:id="@+id/action_student_lobby_to_student_play"
+            app:destination="@id/student_play_fragment"
+            app:popUpTo="@id/student_lobby_fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/student_play_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.StudentPlayFragment"
+        android:label=""
+        tools:layout="@layout/fragment_student_play">
+        <action
+            android:id="@+id/action_student_play_to_student_milestone"
+            app:destination="@id/student_milestone_fragment" />
+        <action
+            android:id="@+id/action_student_play_to_student_settings"
+            app:destination="@id/student_settings_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/student_milestone_fragment"
+        android:name="com.iesaguadulce.deambulario.playing.StudentMilestoneFragment"
+        android:label=""
+        tools:layout="@layout/fragment_student_milestone"
+        />
+
+    <fragment
+        android:id="@+id/student_settings_fragment"
+        android:name="com.iesaguadulce.deambulario.settings.StudentSettingsFragment"
+        android:label="@string/profile" >
+        <action
+            android:id="@+id/action_student_settings_to_student_faq"
+            app:destination="@id/student_faq_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/student_faq_fragment"
+        android:name="com.iesaguadulce.deambulario.settings.StudentFAQFragment"
+        android:label="@string/faq"
+        tools:layout="@layout/fragment_faq"/>
+
+</navigation>

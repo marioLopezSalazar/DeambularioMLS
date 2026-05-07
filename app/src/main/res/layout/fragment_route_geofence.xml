@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ROUTE MAP -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_geofence"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bottom_control_panel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/map_example" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:elevation="16dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- INSTRUCTIONS -->
+        <TextView
+            android:id="@+id/text_instructions"
+            style="@style/Text_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/touch_to_add_geofence"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- BUBBLES RECYCLERVIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_geofences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/text_instructions"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_geofence" />
+
+        <!-- BUBBLE PERFORMING PANEL -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_edit_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/recycler_geofences"
+            tools:visibility="visible">
+
+            <!-- RADIUS TEXT-->
+            <TextView
+                android:id="@+id/text_radius_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/slider_radius"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/slider_radius"
+                tools:text="Radio: 30m" />
+
+            <!-- RADIUS SLIDER -->
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider_radius"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/app_name"
+                android:stepSize="5.0"
+                android:value="30.0"
+                android:valueFrom="30.0"
+                android:valueTo="500.0"
+                app:layout_constraintEnd_toStartOf="@id/button_delete_geofence"
+                app:layout_constraintStart_toEndOf="@id/text_radius_label"
+                app:layout_constraintTop_toTopOf="parent"
+                app:trackColorInactive="?attr/colorOnSecondary" />
+
+            <!-- BUBBLE DELETE BUTTON -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_delete_geofence"
+                style="@style/ButtonDelete_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/delete"
+                app:layout_constraintBottom_toBottomOf="@id/slider_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/slider_radius" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

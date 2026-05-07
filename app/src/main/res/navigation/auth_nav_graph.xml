@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/selectProfileFragment">
+
+    <!--PROFILE SELECTION-->
+    <fragment
+        android:id="@+id/selectProfileFragment"
+        android:name="com.iesaguadulce.deambulario.auth.SelectProfileFragment"
+        android:label="fragment_select_profile"
+        tools:layout="@layout/fragment_auth_select">
+        <action
+            android:id="@+id/action_selectProfileFragment_to_teacherLoginFragment"
+            app:destination="@id/teacherLoginFragment" />
+        <action
+            android:id="@+id/action_selectProfileFragment_to_studentLoginFragment"
+            app:destination="@id/studentLoginFragment" />
+    </fragment>
+
+
+    <!--TEACHER LOGIN MODE SELECTION (email or Google)-->
+    <fragment
+        android:id="@+id/teacherLoginFragment"
+        android:name="com.iesaguadulce.deambulario.auth.TeacherLoginFragment"
+        android:label="fragment_teacher_login"
+        tools:layout="@layout/fragment_auth_teacher">
+        <action
+            android:id="@+id/action_teacherLoginFragment_to_teacherLoginEmailFragment"
+            app:destination="@id/teacherLoginEmailFragment" />
+    </fragment>
+
+
+    <!-- TEACHER LOGIN USING EMAIL-->
+    <fragment
+        android:id="@+id/teacherLoginEmailFragment"
+        android:name="com.iesaguadulce.deambulario.auth.TeacherLoginEmailFragment"
+        android:label="TeacherEmailLoginFragment"
+        tools:layout="@layout/fragment_auth_teacher_email">
+        <action
+            android:id="@+id/action_teacherLoginEmailFragment_to_teacherLoginEmailRegisterFragment"
+            app:destination="@id/teacherLoginEmailRegisterFragment" />
+    </fragment>
+
+
+    <!-- TEACHER SIGN-UP WITH EMAIL-->
+    <fragment
+        android:id="@+id/teacherLoginEmailRegisterFragment"
+        android:name="com.iesaguadulce.deambulario.auth.TeacherLoginEmailRegisterFragment"
+        android:label="TeacherRegisterFragment"
+        tools:layout="@layout/fragment_auth_teacher_email_register" />
+
+
+    <!--TEACHER LOGIN USING GOOGLE-->
+    <fragment
+        android:id="@+id/studentLoginFragment"
+        android:name="com.iesaguadulce.deambulario.auth.StudentLoginFragment"
+        android:label="fragment_student_login"
+        tools:layout="@layout/fragment_auth_student" />
+
+</navigation>

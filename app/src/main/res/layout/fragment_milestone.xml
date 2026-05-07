@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- MILESTONE TITLE -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_milestone_title"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:hint="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="300dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_milestone_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            tools:text="Willow Grandad: The most ancient tree"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- MILESTONE PERFORMANCE TAB LAYOUT -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_milestone"
+        style="@style/TabLayout_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/milestone"
+        app:layout_constraintTop_toBottomOf="@id/input_milestone_title" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/tab_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tab_milestone" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager_milestone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

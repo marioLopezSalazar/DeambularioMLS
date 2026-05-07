@@ -1,0 +1,55 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/pref_category_sound">
+        <SeekBarPreference
+            app:key="pref_student_volume"
+            app:title="@string/pref_volume"
+            app:showSeekBarValue="false"
+            app:min="0"
+            app:defaultValue="50" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_category_appearance">
+        <ListPreference
+            app:key="pref_student_font_size"
+            app:title="@string/pref_font_size"
+            app:entries="@array/font_size_entries"
+            app:entryValues="@array/font_size_values"
+            app:defaultValue="medium"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_student_palette"
+            app:title="@string/pref_color_palette"
+            app:entries="@array/palette_entries"
+            app:entryValues="@array/palette_values"
+            app:defaultValue="forest"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:key="pref_student_language"
+            app:title="@string/pref_language"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:defaultValue="es"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_category_help">
+        <Preference
+            app:key="pref_student_guide"
+            app:title="@string/pref_interactive_guide" />
+
+        <Preference
+            app:key="pref_student_faq"
+            app:title="@string/pref_faq" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_category_info">
+        <Preference
+            app:key="pref_student_about"
+            app:title="@string/pref_about"
+            app:summary="@string/app_version" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BASE COLORS -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#797979</color>
+    <color name="black_transparent_50">#80000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!-- STUDENTS PALETTES -->
+    <color name="forest_primary">#2E7D32</color>
+    <color name="forest_secondary">#81C784</color>
+    <color name="forest_background">#F1F8E9</color>
+    <color name="forest_dark">#152B18</color>
+
+    <color name="coast_primary">#0277BD</color>
+    <color name="coast_secondary">#4DD0E1</color>
+    <color name="coast_background">#E1F5FE</color>
+    <color name="coast_dark">#052033</color>
+
+    <color name="city_primary">#8da3cf</color>
+    <color name="city_secondary">#FF7043</color>
+    <color name="city_background">#ECEFF1</color>
+    <color name="city_dark">#1B2326</color>
+
+
+    <!-- DEAMBULARIO COLOR -->
+    <color name="deambulario_orange_ultra_dark">#542800</color>
+    <color name="deambulario_orange_dark">#C66900</color>
+    <color name="deambulario_orange">#FF9800</color>
+    <color name="deambulario_orange_light">#FFC947</color>
+    <color name="deambulario_orange_ultra_light">#FFF3E0</color>
+
+
+    <!-- MILESTONES -->
+    <color name="deambulario_purple">#9C27B0</color>
+    <color name="geo_covered">#2196F3</color>
+    <color name="geo_uncovered">#F44336</color>
+
+
+    <!-- STUDENTS STATES -->
+    <color name="student_active">#4CAF50</color>
+    <color name="student_lost_signal">#797979</color>
+    <color name="student_disconnected">#FF000000</color>
+    <color name="student_abandoned">#FF000000</color>
+    <color name="student_done">#4CAF50</color>
+
+
+    <!-- MILESTONES & ACTIVITIES TRACKING STATE -->
+    <color name="pending">#F44336</color>
+    <color name="incompleted">#C66900</color>
+    <color name="completed">#4CAF50</color>
+
+</resources>
+
+
+
+
+

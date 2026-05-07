@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_session"
+    style="@style/Card_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="16dp">
+
+        <!-- ROUTE TITLE -->
+        <TextView
+            android:id="@+id/text_session_title"
+            style="@style/Subtitle_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btn_session_action"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Sculptures in the park"/>
+
+        <!-- SESSION DATE -->
+        <TextView
+            android:id="@+id/text_session_date"
+            style="@style/Text_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorOutlineVariant"
+            app:layout_constraintEnd_toStartOf="@id/btn_session_action"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_session_title"
+            tools:text="5th April 2026"/>
+
+        <!-- ROUTE ACTION BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_session_action"
+            style="@style/CardButton_teacher"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/action"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:icon="@drawable/icon_download_results" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_student"
+    style="@style/Card_teacher"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- STUDENT STATUS ICON -->
+        <ImageView
+            android:id="@+id/image_student_status"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/status"
+            tools:ignore="ImageContrastCheck"
+            tools:src="@drawable/icon_play"
+            tools:tint="@color/student_active" />
+
+        <!-- STUDENT NICK -->
+        <TextView
+            android:id="@+id/text_user_name"
+            style="@style/Subtitle_teacher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            tools:text="Ashton B" />
+
+        <!-- OUT-OF-GEOFENCE INDICATOR-AND-BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/icon_alert"
+            style="@style/CardButtonMain_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/out_of_geofence"
+            android:visibility="gone"
+            app:icon="@drawable/icon_geofence"
+            app:tint="?attr/colorError"
+            tools:visibility="visible" />
+
+        <!-- ROUTE ENDED INDICATOR -->
+        <ImageView
+            android:id="@+id/icon_progress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/finished"
+            android:visibility="gone"
+            app:srcCompat="@drawable/icon_ok"
+            app:tint="@color/student_done"
+            tools:ignore="ImageContrastCheck"
+            tools:visibility="visible" />
+
+        <!-- KICK STUDENT BUTTON -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_kick_user"
+            style="@style/ButtonDelete_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/reject" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

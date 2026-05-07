@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheet_Handle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">?attr/colorOutlineVariant</item>
+    </style>
+
+    <style name="ThemeOverlay_Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorControlNormal">?attr/colorOutlineVariant</item>
+        <item name="colorOnSurfaceVariant">?attr/colorOutlineVariant</item>
+        <item name="colorOnSurface">?attr/colorOutlineVariant</item>
+        <item name="actionMenuTextColor">?attr/colorOutlineVariant</item>
+        <item name="android:textColorSecondary">?attr/colorOutlineVariant</item>
+    </style>
+
+
+
+    <!--  TEACHER  -->
+
+    <style name="Title_teacher" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Subtitle_teacher" parent="TextAppearance.Material3.BodyLarge"/>
+
+    <style name="Text_teacher" parent="TextAppearance.Material3.BodyMedium"/>
+
+    <style name="Button_teacher" parent="Widget.Material3.Button">
+        <item name="android:paddingHorizontal">12dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonDelete_teacher" parent="Widget.Material3.Button.IconButton">
+        <item name="icon">@drawable/icon_delete</item>
+        <item name="iconTint">?attr/colorError</item>
+    </style>
+
+    <style name="Reorder_teacher" parent="Widget.Material3.Button.IconButton">
+        <item name="iconTint">?attr/colorOutlineVariant</item>
+    </style>
+
+    <style name="CardButton_teacher" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="iconTint">?attr/colorOnSurfaceVariant</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item>
+    </style>
+
+    <style name="CardButtonMain_teacher" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">?attr/colorOutlineVariant</item>
+        <item name="iconTint">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Card_teacher" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/deambulario_orange_ultra_light</item>
+        <item name="backgroundTint">@color/deambulario_orange_ultra_light</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
+    </style>
+
+    <style name="SearchBar_teacher" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">24dp</item>
+        <item name="boxCornerRadiusTopEnd">24dp</item>
+        <item name="boxCornerRadiusBottomStart">24dp</item>
+        <item name="boxCornerRadiusBottomEnd">24dp</item>
+    </style>
+
+    <style name="Fab_teacher" parent="Widget.Material3.FloatingActionButton.Large.Primary">
+        <item name="fabCustomSize">80dp</item>
+        <item name="maxImageSize">40dp</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="tint">?attr/colorOnPrimary</item>
+        <item name="iconTint">?attr/colorOnPrimary</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SwitchLabel_teacher">
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">end|center_vertical</item>
+    </style>
+
+    <style name="TabLayout_teacher" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorAnimationMode">elastic</item>
+        <item name="tabIndicatorColor">?attr/colorPrimary</item>
+        <item name="tabSelectedTextColor">?attr/colorPrimary</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Material3.TitleSmall</item>
+    </style>
+
+    <style name="Chip_teacher" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/chip_bg_teacher</item>
+        <item name="android:textColor">@color/chip_text_teacher</item>
+        <item name="checkedIconTint">?attr/colorOnPrimaryContainer</item>
+        <item name="chipStrokeColor">?attr/colorOutlineVariant</item>
+        <item name="android:checkable">true</item>
+    </style>
+
+    <style name="Toolbar_teacher" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="titleTextColor">?attr/colorOutlineVariant</item>
+        <item name="navigationIconTint">?attr/colorOutlineVariant</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay_Toolbar</item>
+    </style>
+
+    <style name="BottomNavIndicator_teacher" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="EmptyList_teacher" parent="">
+        <item name="android:textAppearance">@style/Title_teacher</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="drawableTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="GlobalLoadingOverlay_teacher">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black_transparent_50</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+
+    <style name="Guide_teacher">
+        <item name="mttp_backgroundColour">?attr/colorOutlineVariant</item>
+        <item name="mttp_focalColour">@color/transparent</item>
+        <item name="mttp_primaryTextColour">@color/white</item>
+        <item name="mttp_secondaryTextColour">@color/white</item>
+        <item name="mttp_primaryTextSize">22sp</item>
+        <item name="mttp_secondaryTextSize">16sp</item>
+        <item name="mttp_primaryTextStyle">bold</item>
+    </style>
+
+
+
+    <!-- STUDENT -->
+
+    <style name="ShapeAppearance_Student_Bubble" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="Title_student" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/student_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">40sp</item>
+        <item name="lineHeight">48sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Subtitle_student" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/student_font</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">30sp</item>
+        <item name="lineHeight">40sp</item>
+    </style>
+
+    <style name="Text_student" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/student_font</item>
+    </style>
+
+    <style name="Button_student" parent="Widget.Material3.Button">
+        <item name="fontFamily">@font/student_font</item>
+        <item name="android:textColor">?attr/colorOutlineVariant</item>
+        <item name="android:iconTint">?attr/colorOutlineVariant</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_Student_Bubble</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:stateListAnimator">@animator/button_bounce</item>
+    </style>
+
+    <style name="Card_student" parent="Widget.Material3.CardView.Elevated">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance_Student_Bubble</item>
+        <item name="cardElevation">8dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">?attr/colorPrimaryContainer</item>
+    </style>
+
+    <style name="Toolbar_student" parent="Widget.Material3.Toolbar">
+        <item name="navigationIconTint">?attr/colorOutlineVariant</item>
+        <item name="titleTextColor">?attr/colorOutlineVariant</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay_Toolbar</item>
+        <item name="titleTextAppearance">@style/ToolbarTitle_student</item>
+    </style>
+
+    <style name="ToolbarTitle_student" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/student_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GlobalLoadingOverlay_student">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#80000000</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:elevation">10dp</item>
+    </style>
+
+    <style name="Guide_student">
+        <item name="mttp_backgroundColour">?attr/colorOutlineVariant</item>
+        <item name="mttp_focalColour">@color/transparent</item>
+        <item name="mttp_primaryTextColour">@color/white</item>
+        <item name="mttp_secondaryTextColour">@color/white</item>
+        <item name="mttp_primaryTextSize">22sp</item>
+        <item name="mttp_secondaryTextSize">16sp</item>
+        <item name="mttp_primaryTextStyle">bold</item>
+    </style>
+
+</resources>

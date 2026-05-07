@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:theme="@style/Theme.Deambulario.Student.Forest">
+
+    <!-- ROUTE MAP -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/session_student_map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/map_example" />
+
+    <!-- SELECTED/NEXT MILESTONE INDICATOR -->
+    <TextView
+        android:id="@+id/textview_next_milestone_distance"
+        style="@style/Subtitle_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/session_student_map_view"
+        tools:text="All milestones done, congrats!" />
+
+    <!-- MILESTONE ACTION BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_view_milestone"
+        style="@style/Button_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/do_milestone"
+        android:visibility="gone"
+        app:icon="@drawable/icon_see_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_next_milestone_distance"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible" />
+
+    <!-- MESSAGE LOG -->
+    <ScrollView
+        android:id="@+id/scrollview_log"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical"
+        android:background="?attr/colorSecondary"
+        app:layout_constraintTop_toBottomOf="@+id/button_view_milestone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textview_message_log"
+            style="@style/Text_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/no_teacher_messages_from_now" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

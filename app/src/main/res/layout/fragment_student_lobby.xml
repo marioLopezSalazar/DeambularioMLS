@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    android:theme="@style/Theme.Deambulario.Student.Forest">
+
+    <!-- ROUTE TITLE -->
+    <TextView
+        android:id="@+id/textview_stud_lobby_route_name"
+        style="@style/Title_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Sculptures in the park" />
+
+    <!-- STUDENT ICON -->
+    <ImageView
+        android:id="@+id/icon_student"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/im_student"
+        android:src="@drawable/icon_play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_stud_lobby_route_name"
+        app:tint="?attr/colorSecondary"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- STUDENT NICK -->
+    <TextView
+        android:id="@+id/textview_stud_lobby_student_name"
+        style="@style/Subtitle_student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:maxLines="2"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="16sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_student"
+        tools:text="Ashton B" />
+
+    <!-- WAITING LABEL -->
+    <TextView
+        android:id="@+id/textview_stud_lobby_waiting_status"
+        style="@style/Text_student"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/waiting"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_leave_lobby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_stud_lobby_student_name"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- LEAVE BUTTON -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_leave_lobby"
+        style="@style/Button_student"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/leave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_stud_lobby_waiting_status"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintWidth_max="300dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

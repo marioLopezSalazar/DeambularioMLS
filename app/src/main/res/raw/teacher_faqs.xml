@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faqs xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="es">
+    <faq>
+        <question>¿Cuántos hitos puede tener una ruta?</question>
+        <answer>Todos los que desees. No obstante, para poder iniciar una sesión en ella deberá tener al menos un hito.</answer>
+    </faq>
+    <faq>
+        <question>¿Todos los hitos tienen que tener contenidos y actividades?</question>
+        <answer>No, los contenidos y las actividades son opcionales. Pueden crearse hitos solamente indicando su título y posición.</answer>
+    </faq>
+    <faq>
+        <question>¿Todas las rutas tienen que tener geovallado?</question>
+        <answer>El geovallado puede establecerse o no. Una vez establecido, debe configurarse si estará habilitado o no, antes de iniciar la sesión.</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo editar o borrar una ruta?</question>
+        <answer>Las rutas pueden editarse o borrarse desde la ventana de 'Detalle de ruta'. No pueden editarse ni eliminarse rutas con sesión activa.</answer>
+    </faq>
+    <faq>
+        <question>Si edito o borro una ruta, ¿qué sucede con sus las sesiones finalizadas?</question>
+        <answer>¡No hay problema! Las sesiones se mantienen guardadas, junto con los enunciados originales de las actividades y las respuestas del alumnado.</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo tener abiertas varias sesiones de una misma ruta?</question>
+        <answer>Sí, es posible. Para diferenciarlas, ten en cuenta que las sesiones más recientes aparecen más arriba en la lista.</answer>
+    </faq>
+    <faq>
+        <question>¿Cómo puedo acceder a las respuestas de mi alumnado a las actividades?</question>
+        <answer>Una vez cerrada la sesión, puede generarse una hoja de cálculo con las respuestas y descargarla, subirla a la nube, compartirla, etc.</answer>
+    </faq>
+    <faq>
+        <question>¿Dónde están las fotos y vídeos subidos por mi alumnado?</question>
+        <answer>Quedan almacenados en Internet, disponibles para ser descargados utilizando el enlace que aparece en la hoja de respuestas. ¡PASADOS 90 DÍAS SERÁN BORRADOS!</answer>
+    </faq>
+    <faq>
+        <question>¿Puedo borrar una sesión?</question>
+        <answer>Sí, simplemente haz una pulsación larga sobre ella (no en el botón redondo) y podrás borrarla. No olvides descargar previamente las respuestas de tu alumnado, si las hubera.</answer>
+    </faq>
+    <faq>
+        <question>¿Qué datos recoge la aplicación sobre mi alumnado?</question>
+        <answer>Solo se recoge la ubicación en tiempo real. No se recoge ningún otro dato personal o identificativo, salvo la información que el propio alumnado pueda aportar en las respuestas a las actividades. Se recomienda aconsejar sobre buenas prácticas en materia de protección digital. </answer>
+    </faq>
+    <faq>
+        <question>¿Qué sucede si mi alumnado se queda sin cobertura?</question>
+        <answer>Dejarás de recibir su posición en tiempo real, aunque verás dónde se quedó sin cobertura. Tendrá acceso a los hitos, con sus contenidos y actividades. Las repuestas se subirán automáticamente una vez recupere la cobertura, excepto fotos/vídeos (se les indicará que las guarden en su galería y las suban después).</answer>
+    </faq>
+    <faq>
+        <question>Si mi alumnado cierra la app, ¿recibirá mis mensajes?</question>
+        <answer>Incluso con la app minimizada o el teléfono con la pantalla apagada, recibirá las notificaciones de mensajes, siempre y cuando no escoja la opción de 'Abandonar ruta' explícitamente.</answer>
+    </faq>
+    <faq>
+        <question>Si no acepto que Deambulario conozca mi ubicación, ¿puedo utilizar la app?</question>
+        <answer>Sí, la ubicación del profesorado solo se utiliza para facilitar el diseño de nuevas rutas y visualizarse en el mapa de la sesión.</answer>
+    </faq>
+    <faq>
+        <question>Si mi alumnado no acepta que Deambulario conozca su ubicación o le envíe notificaciones, ¿puede entrar a la sesión?</question>
+        <answer>No podrá, consideramos que es imprescindible acceder a estas funcionalidades para ponerlas a disposición del profesorado y que la ruta sea segura..</answer>
+    </faq>
+</faqs>
